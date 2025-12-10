@@ -116,4 +116,11 @@
   margin-left: 30px;
   margin-top: 40px;
 }
-.img-fluid-custom
+
+/* PSN */
+#PSN {
+  max-width: 0px;
+}
+.custom-psn-button {
+  
+}
