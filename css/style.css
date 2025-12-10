@@ -1,14 +1,39 @@
-
 .hero {
+  margin-left: -150px;
   padding-top: 17rem;
   padding-bottom: 5rem;
   background-image: url(../img/img/jumbo-bg.png);
+  background-repeat: no-repeat;
 }
 .hero2 {
-    padding-top: 17rem;
-  padding-bottom: 5rem;
   background-image: url(../img/img/it-takes-two-hero-banner-desktop.jpg);
 }
-.hero img {
-    padding-left: 0px;/*non fa un czo*/
+
+#returnal-logo {
+  margin-left: 0px;
+  width: 300px;
+}
+
+#main-title {
+  font-size: 3rem;
+}
+#description-text {
+  font-size: 1rem;
+}
+#buy-button {
+  border-radius: 15rem;
+  color: white;
+  background-color: rgb(255, 51, 0);
+}
+
+/* Playstation 5 Presentation*/
+#blue-text {
+  color: blue;
+  font-size: 0.7rem;
+  margin-bottom: 0rem;
+}
+#ps5-presentation {
+  margin-top: 0rem;
+  margin-bottom: 1.5rem;
+
 }
