@@ -21,19 +21,14 @@
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
   </head>
   <body>
-    <!-- Header scura -->
-     <header id="page-header">
-      <div class="header-top bg-black py-1 text-end">
-        
-        <img class="logo" src="./img/img/sony_logo.svg" alt="Sony logo">
-      </div>
-      <nav class="bg-body-tertiary navbar navbar-expand-lg">
-
-      </nav>
-     </header>
-     <!-- TODO: da rivedere -->
+    <div class="bg-black text-white p-2 text-end">SONY</div>
+    <!-- Navbar Scura -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <a class="navbar-logo" href="#">
+          <i class="bi bi-playstation"></i>
+        </a>
         <!-- Toggler per l'hamburger menu (visibile su mobile/tablet) -->
-         <!--
         <button
           type="button"
           data-bs-toggle="collapse"
@@ -45,7 +40,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        
+        <!-- Elementi del menu collassabili -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -66,7 +61,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Supporto</a>
             </li>
-            
+            <!-- TODO: trovare il modo di spostare a destra -->
             <li class="nav-item">
               <a class="nav-link" href="#">My Playstation</a>
             </li>
@@ -75,7 +70,8 @@
             </li>
           </ul>
         </div>
-        
+        <!-- Form di ricerca allineato a destra (visibile solo da desktop in su) -->
+        <!-- ms-auto spinge il form a destra. d-none nasconde su mobile, d-md-flex lo mostra come flexbox su desktop -->
         <form class="d-none d-lg-flex ms-auto">
           <input
             class="form-control me-2"
@@ -86,19 +82,13 @@
           <button class="btn btn-outline-success" type="submit">Cerca</button>
         </form>
       </div>
-    </nav> 
-      -->
-    <div class="hero">
-      <!-- L'immagine a piena larghezza (img-fluid) -->
-
+    </nav>
+    <div class="hero">      
       <!-- Contenitore del testo in sovrimpressione -->
       <div class="container">
+        <img src="./img/img/returnal-hero-banner-logo.png" alt="Returnal Logo" class="returnal-logo">
+
         <div class="col-5 text-white">
-          <img
-            src="./img/img/returnal-hero-banner-logo.png"
-            id="returnal-logo"
-            alt="returnal-logo"
-          />
           <h1 class="display-3 fw-bold" id="under-title">Rompi il cerchio</h1>
           <p class="lead" id="description-text">
             Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni
@@ -115,7 +105,7 @@
     </div>
     <!-- Container con immagini videogiochi(probabilmente si sostituiscono con l'immagine grande sopra) -->
     <section class="container mt-2 mb-5">
-      <div class="rolg
+      <div class="row g-3">
         <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-4">
           <img
             src="./img/img/returnal-listing-thumb-01-ps5.jpg"
@@ -161,7 +151,7 @@
       </div>
       <!-- Presentazione ps5 -->
       <!-- TODO: indentare al di fuori del precedente container(BLOCCATO) -->
-      <section class="container mt-5">
+      <section>
         <div class="row align-items-center text-center">
           <div class="col-12">
             <p id="blue-text">PLAY HAS NO LIMITS</p>
@@ -179,95 +169,283 @@
     </section>
     <!-- Playstation 5 e i suoi accessori -->
     <section class="container mt-4">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-8 col-lg-6">
-          <div class="row align-items-center mb-4">
-            <div class="col-md-6">
-              <h1 class="mb-3">Console PlayStation 5</h1>
-              <p class="mb-3 text-secondary">
-                Sperimenta la nuova generazione di incredibili giochi
-                PlayStation.
-              </p>
-              <a href="#" class="btn btn-primary mb-4">Maggiori informazioni</a>
-            </div>
-            <div class="col-md-6">
-              <img
-                src="./img/img/playstation-5-thumb.png"
-                alt="Console PS5 con Controller"
-                class="img-fluid"
-              />
-            </div>
-            <!-- Lista di accessori con l'effetto hover -->
-            <div class="accessory-item py-2">
-              <img
-                src="./img/img/playstation-5-thumb.png"
-                alt="Console PS5 con Controller"
-                class="img-fluid"
-              />
-            </div>
-
-            <div class="accessory-item py-2">
-              <img
-                src="./img/img/joypad-thumb.png"
-                alt="Controller DualSense"
-                class="img-fluid"
-              />
-            </div>
-
-            <div class="accessory-item py-2">
-              <img
-                src="./img/img/headset-thumb.png"
-                alt="Cuffie Pulse 3D"
-                class="img-fluid"
-              />
-            </div>
-
-            <div class="accessory-item py-2">
-              <img
-                src="./img/img/remote-thumb.png"
-                alt="Telecomando"
-                class="img-fluid"
-              />
-            </div>
-            <div class="accessory-item py-2">
-              <img
-                src="./img/img/camera-thumb.jpg"
-                alt="Telecamera HD"
-                class="img-fluid"
-              />
-            </div>
-          </div>
+      <div class="row align-items-center mb-4">
+        <div class="col-md-6">
+          <h1 class="mb-3">Console PlayStation 5</h1>
+          <p class="mb-3 text-secondary">
+            Sperimenta la nuova generazione di incredibili giochi PlayStation.
+          </p>
+          <a href="#" class="btn btn-primary mb-4">Maggiori informazioni</a>
         </div>
+        <div class="col-md-6">
+          <img
+            src="./img/img/playstation-5-thumb.png"
+            alt="Console PS5 con Controller"
+            class="img-fluid"
+          />
+        </div>
+        <!-- Lista di accessori con l'effetto hover -->
+      </div>
+
+      <!-- CIRCONDATI DA ROW "row-cols-3 row-cols-md-5" -->
+      <div class="row row-cols-3 row-cols-md-5 debug">
+        <div class="accessory-item py-2">
+          <img
+            src="./img/img/playstation-5-thumb.png"
+            alt="Console PS5 con Controller"
+            class="img-fluid"
+          />
+        </div>
+
+        <div class="accessory-item py-2">
+          <img
+            src="./img/img/joypad-thumb.png"
+            alt="Controller DualSense"
+            class="img-fluid"
+          />
+        </div>
+
+        <div class="accessory-item py-2">
+          <img
+            src="./img/img/headset-thumb.png"
+            alt="Cuffie Pulse 3D"
+            class="img-fluid"
+          />
+        </div>
+
+        <div class="accessory-item py-2">
+          <img
+            src="./img/img/remote-thumb.png"
+            alt="Telecomando"
+            class="img-fluid"
+          />
+        </div>
+        <div class="accessory-item py-2">
+          <img
+            src="./img/img/camera-thumb.jpg"
+            alt="Telecamera HD"
+            class="img-fluid"
+          />
+        </div>
+        <!-- FINE ROW -->
       </div>
     </section>
     <!-- Presentazione "It taakes two" -->
     <!-- TODO: modificare -->
-    <div class="hero2">
-      <!-- L'immagine a piena larghezza (img-fluid) -->
+    <section>
+      <div class="hero2">
+        <!-- L'immagine a piena larghezza (img-fluid) -->
 
-      <!-- Contenitore del testo in sovrimpressione -->
-      <div class="container">
-        <div class="col-5 text-white">
-          <h1 class="display-3 fw-bold">
-            Un'avventura cooperativa selvaggia ti attende
-          </h1>
-          <p class="lead">
-            Trova un amico e partite insieme per l'avventura più folle delle
-            vostre vite in It Takes Two, un gioco d'avventura cooperativa a
-            piattaforme che stravolge il suo genere.
-          </p>
+        <!-- Contenitore del testo in sovrimpressione -->
+        <div class="container">
+          <img src="./img/img/it-takes-two-logo.png" alt="it-takes-two-logo">
+          <div class="col-5 text-white">
+            <h1 class="display-3 fw-bold" id="under-title">
+              Un'avventura cooperativa selvaggia ti attende
+            </h1>
+            <p class="lead" id="description-text">
+              Trova un amico e partite insieme per l'avventura più folle delle
+              vostre vite in It Takes Two, un gioco d'avventura cooperativa a
+              piattaforme che stravolge il suo genere.
+            </p>
 
-          <!-- TODO: Bottone da modificare in override -->
-          <a href="#" class="btn btn-danger btn-lg">Acquista ora</a>
+            <!-- TODO: Bottone da modificare in override -->
+            <a href="#" class="btn btn-danger btn-lg" id="buy-button"
+              >Acquista ora</a
+            >
+          </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- Nuove uscite -->
-    <section></section>
+    <section class="debug">
+      <div class="container mt-2">
+        <div class="row align-items-center text-start debug">
+          <div class="col-12">
+            <h2>Nuove uscite</h2>
+            <p>Giochi incredibili per ps4 e ps5 disponibili ora</p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+            <figure class="text-start">
+              <img
+                src="./img/img/tony-hawks-pro-skater-1-2-store-art.jpg"
+                alt="first-immage"
+                class="img-fluid rounded"
+              />
+              <figcaption class="small mt-2">
+                Tony Hawk's Pro Skater 1 + 2
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+            <figure class="text-start">
+              <img
+                src="./img/img/crash-bandicoot-4-its-about-time-store-art.jpg"
+                alt="second-immage"
+                class="img-fluid rounded"
+              />
+              <figcaption class="small mt-2">
+                Crash Bandicoot 4: It's About Time
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+            <figure class="text-start">
+              <img
+                src="./img/img/tony-hawks-pro-skater-1-2-store-art.jpg"
+                alt="first-immage"
+                class="img-fluid rounded"
+              />
+              <figcaption class="small mt-2">
+                Tony Hawk's Pro Skater 1 + 2
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+            <figure class="text-start">
+              <img
+                src="./img/img/crash-bandicoot-4-its-about-time-store-art.jpg"
+                alt="second-immage"
+                class="img-fluid rounded"
+              />
+              <figcaption class="small mt-2">
+                Crash Bandicoot 4: It's About Time
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+            <figure class="text-start">
+              <img
+                src="./img/img/tony-hawks-pro-skater-1-2-store-art.jpg"
+                alt="first-immage"
+                class="img-fluid rounded"
+              />
+              <figcaption class="small mt-2">
+                Tony Hawk's Pro Skater 1 + 2
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+            <figure class="text-start">
+              <img
+                src="./img/img/crash-bandicoot-4-its-about-time-store-art.jpg"
+                alt="second-immage"
+                class="img-fluid rounded"
+              />
+              <figcaption class="small mt-2">
+                Crash Bandicoot 4: It's About Time
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+            <figure class="text-start">
+              <img
+                src="./img/img/tony-hawks-pro-skater-1-2-store-art.jpg"
+                alt="first-immage"
+                class="img-fluid rounded"
+              />
+              <figcaption class="small mt-2">
+                Tony Hawk's Pro Skater 1 + 2
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+            <figure class="text-start">
+              <img
+                src="./img/img/crash-bandicoot-4-its-about-time-store-art.jpg"
+                alt="second-immage"
+                class="img-fluid rounded"
+              />
+              <figcaption class="small mt-2">
+                Crash Bandicoot 4: It's About Time
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+            <figure class="text-start">
+              <img
+                src="./img/img/tony-hawks-pro-skater-1-2-store-art.jpg"
+                alt="first-immage"
+                class="img-fluid rounded"
+              />
+              <figcaption class="small mt-2">
+                Tony Hawk's Pro Skater 1 + 2
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+            <figure class="text-start">
+              <img
+                src="./img/img/crash-bandicoot-4-its-about-time-store-art.jpg"
+                alt="second-immage"
+                class="img-fluid rounded"
+              />
+              <figcaption class="small mt-2">
+                Crash Bandicoot 4: It's About Time
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+            <figure class="text-start">
+              <img
+                src="./img/img/tony-hawks-pro-skater-1-2-store-art.jpg"
+                alt="first-immage"
+                class="img-fluid rounded"
+              />
+              <figcaption class="small mt-2">
+                Tony Hawk's Pro Skater 1 + 2
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-2 mb-2">
+            <figure class="text-start">
+              <img
+                src="./img/img/crash-bandicoot-4-its-about-time-store-art.jpg"
+                alt="second-immage"
+                class="img-fluid rounded"
+              />
+              <figcaption class="small mt-2">
+                Crash Bandicoot 4: It's About Time
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Esplora ps4 -->
     <section></section>
     <!-- Playstation Plus -->
-    <section></section>
+    <section>
+      <div class="container-fluid custom-container">
+        <div class="row g-0 w-100 align-items-center bg-dark-subtle">
+          <!-- g-0 rimuove i gutter di colonna di default -->
+          <!-- Colonna di sinistra (visibile sempre) -->
+          <div class="col-12 col-md-6 content-left">
+            <img
+              src="./img/img/ps-plus-logo.png"
+              alt="PS Plus Logo"
+              class="img-fluid-custom mb-3"
+            />
+            <p>
+              Migliora la tua esperienza PlayStation con l'accesso a
+              multigiocatore online, giochi mensili, sconti esclusivi e altro
+              ancora.
+            </p>
+
+            <a href="#" class="btn btn-primary">Esplora PlayStation Plus</a>
+          </div>
+
+          <!-- Le classi d-none e d-md-block nascondono l'elemento fino al breakpoint 'md' (medium) e lo mostrano da 'md' in su. -->
+          <div class="col-md-6 d-none d-md-block">
+            <img
+              src="./img/img/ps-plus-april-monthly-games-featured-image-block.png"
+              alt="PS Plus Games"
+              class="img-fluid-custom2 w-100 h-100"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Nuovi sconti -->
     <section></section>
     <!-- Playstattion Now -->
@@ -283,3 +461,14 @@
     ></script>
   </body>
 </html>
+<section>
+  <div class="container debug">
+    <h1>ciao</h1>
+
+    <div class="row debug">
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+</section>
