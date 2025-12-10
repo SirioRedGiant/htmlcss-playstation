@@ -484,15 +484,15 @@
     </section>
     <!-- Playstation Now FIXAMI -->
     <section>
-      <div class="container-fluid custom-container">
+      <div class="container">
         <div class="row g-0 w-100 align-items-center bg-dark-subtle">
           <!-- g-0 rimuove i gutter di colonna di default -->
           <!-- Colonna di sinistra (visibile sempre) -->
-          <div class="col-12 col-md-6 content-left" id="PSN">
+          <div class="col-12 col-md-6 content-left">
             <img
               src="./img/img/ps-now-logo-two-column.png"
-              alt="PS Plus Logo"
-              class="img-fluid-now mb-3"
+              alt="ps now logo"
+              class="psn w-50 ms-4 mb-2"
             />
             <p>
               Ottieni l'accesso immediato a una vastissima raccolta di oltre 800
@@ -500,15 +500,18 @@
               aggiunti ogni mese.
             </p>
 
-            <a href="#" class="btn btn-primary custom-psn-button">Esplora PlayStation Plus</a>
+            <a href="#" class="btn btn-primary custom-psn-button"
+              >Esplora PlayStation Plus</a
+            >
           </div>
 
           <!-- Le classi d-none e d-md-block nascondono l'elemento fino al breakpoint 'md' (medium) e lo mostrano da 'md' in su. -->
           <div class="col-md-6 d-none d-md-block">
             <img
               src="./img/img/ps-now-april-featured-image-block.png"
-              alt="PS Plus Games"
-              class="img-fluid-now2 w-100 h-100"
+              alt="avengers-theme"
+              class="avengers w-100 h-100"
+              id="avengers_img"
             />
           </div>
         </div>
@@ -522,34 +525,69 @@
             <h2>Seguici sui social media</h2>
           </div>
           <div class="row col-6 col-md-3 mb-5 ms-4">
-            <img
-              src="./img/img/twitter.jpg"
-              alt="giochi a meno"
-            />
+            <img src="./img/img/twitter.jpg" alt="giochi a meno" />
           </div>
           <div class="row col-6 col-md-3 mb-5">
-            <img
-              src="./img/img/facebook.jpg"
-              alt="giochi a meno"
-            />
+            <img src="./img/img/facebook.jpg" alt="giochi a meno" />
           </div>
           <div class="row col-6 col-md-3 mb-5">
-            <img
-              src="./img/img/instagram.jpg"
-              alt="giochi a meno"
-            />
+            <img src="./img/img/instagram.jpg" alt="giochi a meno" />
           </div>
           <div class="row col-6 col-md-3 mb-5">
-            <img
-              src="./img/img/youtube.png"
-              alt="giochi a meno"
-            />
+            <img src="./img/img/youtube.png" alt="giochi a meno" />
           </div>
         </div>
       </div>
     </section>
     <!-- Footer con vari link e copyright rules-->
-    <section></section>
+    <section id="page-footer" class="bg-primary py-4"> <!-- Aggiunto padding verticale -->
+    <div class="container">
+        
+        <!-- PRIMA RIGA: Logo e Nazione -->
+        <div class="row mb-4">
+            <div class="col-6">
+                
+                <i class="bi bi-playstation text-white d-block"></i>
+                <i class="bi bi-globe text-white d-block"></i>
+                <p class="text-white">Country/ Region: Italy</p>
+            </div>
+        </div>
+
+        <!-- SECONDA RIGA: Links -->
+        <div class="row mb-4">
+            <div class="col-12 col-md-2">
+                <a href="#" class="text-white d-block">Link footer n</a>
+                <a href="#" class="text-white d-block">Link footer n</a>
+                <a href="#" class="text-white d-block">Link footer n</a>
+                <a href="#" class="text-white d-block">Link footer n</a>
+                <a href="#" class="text-white d-block">Link footer n</a>
+            </div>
+            <div class="col-12 col-md-2">
+                <a href="#" class="text-white d-block">Link footer n</a>
+                <a href="#" class="text-white d-block">Link footer n</a>
+                <a href="#" class="text-white d-block">Link footer n</a>
+                <a href="#" class="text-white d-block">Link footer n</a>
+                <a href="#" class="text-white d-block">Link footer n</a>
+                <a href="#" class="text-white d-block">Link footer n</a>
+                <a href="#" class="text-white d-block">Link footer n</a>
+            </div>
+            <div class="col-12 col-md-2">
+                <a href="#" class="text-white d-block">Link footer n</a>
+                <a href="#" class="text-white d-block">Link footer n</a>
+                <a href="#" class="text-white d-block">Link footer n</a>
+            </div>
+        </div>
+        
+        <!-- TERZA RIGA: Copyright -->
+        <div class="row"> 
+            <div class="col-12"> 
+                <p class="text-white">Website 2021 Sony Interactive Europe Limited. Tutti i contenuti, nomi dei giochi, nomi commerciali e/o di abbigliamento,marchi registrati, grafica e immagini associati sono marchi registrati e/o materiale protetto da copyright dei rispettivi proprietari. Tutti i diritti riservati.</p> 
+                <a href="#" class="text-white">Maggiori info</a>
+            </div>
+        </div>
+
+    </div>
+</section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -557,14 +595,3 @@
     ></script>
   </body>
 </html>
-<section>
-  <div class="container debug">
-    <h1>ciao</h1>
-
-    <div class="row debug">
-      <div class="col-md-4"></div>
-      <div class="col-md-4"></div>
-      <div class="col-md-4"></div>
-    </div>
-  </div>
-</section>
