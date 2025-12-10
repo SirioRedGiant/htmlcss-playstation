@@ -35,5 +35,29 @@
 #ps5-presentation {
   margin-top: 0rem;
   margin-bottom: 1.5rem;
+}
 
+/* Playstion 5 e i suoi accessori*/
+.accessory-item {
+  position: relative; 
+  cursor: pointer;  
+  overflow: hidden; /* Nasconde la linea */
+}
+
+/* La linea blu con uno pseudo-elemento */
+.accessory-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;            
+  background-color: blue; 
+  transform: translateY(100%); /*per nasconderla inizialmente*/
+  transition: transform 0.3s ease-out; 
+}
+
+/* Quando si passa sopra, mostra la linea */
+.accessory-item:hover::after {
+  transform: translateY(0);
 }
