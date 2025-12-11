@@ -7,19 +7,40 @@
   padding: 6px;
   min-height: 30px;
 }
-
-.hero .container{
-  position: relative;
+/* hero:returnal presentation */
+#hero-returnal {
+  background-image: url(../img/img/jumbo-bg.png);
   display: flex;
   align-items: flex-end;
   min-height: 75vh;
-  padding-bottom: 5rem;
-  background-image: url(../img/img/jumbo-bg.png);
-  
+  padding-bottom: 5rem;  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+#returnal-logo {
+  position: absolute;
+  top: 5rem;
+  margin-top: 400px;  
+  margin-left: 7.5rem;
+  width: 39.5rem;
+  z-index: 10;
+  filter: saturate(50%);
+  filter: brightness(68%);  
+}
+#under-title {
+  margin-bottom: 3rem;
+  
+}
+#description-text {
+  margin-bottom: 9.5rem;
+}
+
+
+
+
+
+
 .hero2 .container{
   position: relative;
   display: flex;
@@ -29,17 +50,7 @@
   background-image: url(../img/img/it-takes-two-hero-banner-desktop.jpg);
 }
 
-#returnal-logo {
-  position: absolute;
-  top: 5rem;
-  margin-top: 300px;  
-  margin-left: 7.5rem;
-  width: 39.5rem;
-  z-index: 10;
-  filter: saturate(50%);
-  filter: brightness(68%);
-  
-}
+
 .it-takes-two-logo {
   position: absolute;
   top: 5rem;
